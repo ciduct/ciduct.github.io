@@ -1,37 +1,241 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/ciduct/ciduct.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<!DOCTYPE html>
+<html>
+<head>
+<title>개업식 초대장</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-moz-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-text-size-adjust: 100%;
+}
 
-### Markdown
+html,body {
+	height: 100%;
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+body {
+	background-color: #eee;
+}
 
-```markdown
-Syntax highlighted code block
+#wrap {
+	max-width: 500px;
+	margin: 0 auto;
+	background-color: #C2E2E8;
+	height: auto;
+}
 
-# Header 1
-## Header 2
-### Header 3
+.img100 {
+	max-width: 100%;
+	width: auto !important;
+	width: 100%;
+}
 
-- Bulleted
-- List
+.content_wrap {
+	font-size: 14px;
+	text-align: center;
+	padding-top: 15px;
+	margin: 0 15px;
+	color: #000000;
+	line-height: 20px;
+}
 
-1. Numbered
-2. List
+.content_wrap h1 {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 15px;
+	display: block;
+	padding: 10px;
+	border-radius: 5px;
+	color: #000000;
+}
 
-**Bold** and _Italic_ and `Code` text
+.contact_wrap {
+	text-align: center;
+	padding-top: 15px;
+}
 
-[Link](url) and ![Image](src)
-```
+.contact_wrap a {
+	font-size: 15px;
+	color: #2f302c;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	min-width: 40px;
+	margin: 15px;
+	border-radius: 10px;
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+}
+.gallery_wrap {
+	padding: 15px;
+}
+.gallery_wrap a{
 
-### Jekyll Themes
+}
+.gallery_wrap a.bg1 {
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ciduct/ciduct.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+}
+.gallery_wrap a.bg2 {
 
-### Support or Contact
+}
+.gallery_wrap a.bg3 {
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+}
+
+.contact_wrap a.bg1 {
+	background-color: #E6FFFF;
+}
+
+.contact_wrap a.bg2 {
+	background-color: #E6FFFF;
+}
+
+.contact_wrap a.bg3 {
+	background-color: #E6FFFF;
+}
+
+.contact_wrap img {
+	height: 15px;
+	padding-right: 5px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+
+.date_wrap {
+	margin: 0 15px;
+	padding: 20px 0 0 0;
+	text-align: left;
+	font-size: 13px;
+}
+
+.date_wrap img {
+	height: 15px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+	padding-right: 5px;
+}
+
+.addr_wrap {
+	margin: 0 15px;
+	padding: 10px 0;
+	text-align: left;
+	font-size: 13px;
+}
+
+.addr_wrap img {
+	height: 15px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+	padding-right: 5px;
+}
+
+.map_wrap {
+	margin: 0 15px;
+	height: 200px;
+	background-color: #ddd;
+	text-align: center;
+	font-size: 14px;
+}
+
+</style>
+
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type='text/javascript'>
+  //<![CDATA[
+    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+    Kakao.init('290b405dfce2462890387573ce449f39');
+    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+    function sendLink() {
+      Kakao.Link.sendDefault({
+        objectType: 'feed',
+        content: {
+          title: '홍길동 법률사무소 개업식',
+          description: '변호사로서 새 출발을 하면서 평소 아껴주셨던 선후배, 동료, 친지 여러분을 모시고 조촐한 소연을 마련하고자 합니다.',
+          imageUrl: 'http://thecolors.co.kr/web/upload/NNEditor/20150715/opening_invitation_map.png',
+          link: {
+            mobileWebUrl: 'http://localhost',
+            webUrl: 'http://localhost'
+          }
+        },
+       
+        buttons: [
+          {
+            title: '웹으로 보기',
+            link: {
+              mobileWebUrl: 'http://localhost',
+              webUrl: 'http://localhost'
+            }
+          },
+         
+        ]
+      });
+    }
+  //]]>
+</script>
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="content_wrap">
+			<h1>법률 사무소 개업식</h1>
+			그 동안 베풀어 주신 지도와 후의에<br />
+			짐심으로 감사드립니다.<br />
+			변호사로서 새 출발을 하면서<br />
+			평소 아껴주셨던 선후배, 동료, 친지 여러분을<br />
+			모시고 조촐한 소연을 마련하고자 합니다.<br />
+			부디 오셔서 자리를 빛내 주시고<br />
+			많은 격려와 지도편달 바랍니다.<br />
+		</div>
+		<div class="contact_wrap">
+			<a href="tel:010-6654-1221\
+			" class="bg1"><img src="https://cdn4.iconfinder.com/data/icons/miu/24/device-iPhone-smartphone-vertical-glyph-128.png" alt="tel">전화 걸기</a>
+
+			<a id="kakao-link-btn" href="javascript:sendLink()" class="bg3"><img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>카톡 보내기</a>
+		</div>
+
+		<div class="gallery_wrap">
+			<a class="bg1"><img src=""></a>
+		</div>
+
+		<div class="date_wrap">
+			<span><img src="https://cdn2.iconfinder.com/data/icons/office-38/24/office-40-128.png" alt="time" />초대일시 : <strong>2018년 07월 13일 오전 10시</strong></span>
+		</div>
+		<div class="addr_wrap">
+			<span><img src="https://cdn4.iconfinder.com/data/icons/miu/24/house-home-real_estate-property-glyph-128.png" alt="place" />초대장소 : 인천 남동구 간석2동 205-1 올리브백화점 4층</span>
+		</div>
+		<div class="map_wrap" id="map" style="width:100%px;height:350px;"></div>
+		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=290b405dfce2462890387573ce449f39"></script>
+		<script>
+			var container = document.getElementById('map');
+			var options = {
+				center: new daum.maps.LatLng(37.460897, 126.708950),
+				level: 3
+			};
+	
+			var map = new daum.maps.Map(container, options);
+			var markerPosition  = new daum.maps.LatLng(37.460897, 126.708950); 
+			// 마커를 생성합니다
+			var marker = new daum.maps.Marker({
+				position: markerPosition
+			});
+
+			// 마커가 지도 위에 표시되도록 설정합니다
+			marker.setMap(map);
+		</script>
+			
+	</div>
+	
+</body>
+</html>
