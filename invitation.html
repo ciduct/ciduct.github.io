@@ -200,6 +200,21 @@ body {
     }
   //]]>
 </script>
+<script type='text/javascript'>
+  //<![CDATA[
+    // 사용할 앱의 JavaScript 키를 설정해 주세요.
+    Kakao.init('290b405dfce2462890387573ce449f39');
+    // 카카오 로그인 버튼을 생성합니다.
+    function navi(){
+        Kakao.Navi.start({
+            name: "인천 간석동 올리브백화점",
+            x: 37.460897,
+            y: 126.708950,
+            coordType: 'wgs84'
+        });
+    }
+  //]]>
+</script>
 
 </head>
 <body>
@@ -219,6 +234,8 @@ body {
 			" class="bg1"><img src="https://cdn4.iconfinder.com/data/icons/miu/24/device-iPhone-smartphone-vertical-glyph-128.png" alt="tel">전화 걸기</a>
 
 			<a id="kakao-link-btn" href="javascript:sendLink()" class="bg3"><img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>카톡 보내기</a>
+
+			<a id="navi" href="#" onclick="navi();" class="bg3"><img src="/assets/img/about/buttons/navi/kakaonavi_btn_medium.png"/>길안내 하기</a>
 		</div>
 		<hr width = "100%">
 		<div class="gallery_title_wrap" align = center>Gallery
